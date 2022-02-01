@@ -14,4 +14,9 @@
   text-decoration: none !important;
   /* ここにボタンのスタイルを追加していこう */
 }
+
+.try .btn.float:hover {
+  background-color: black;
+  color: white;
+}
 /*# sourceMappingURL=try.css.map */

@@ -16,5 +16,11 @@ $cBlack: black;
     text-decoration: none !important;
 
     /* ここにボタンのスタイルを追加していこう */
+    &.float{
+      &:hover{
+        background-color: $cBlack;
+        color: $cWhite;
+      }
+    }
   }
 }

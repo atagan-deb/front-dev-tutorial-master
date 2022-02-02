@@ -14,9 +14,24 @@ $cBlack: black;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s;
+  position: relative;
+  z-index: 1;
 
   &:hover {
     background-color: $cBlack;
     color: $cWhite;
   }
+}
+span{
+  display: inline-block;
+  background-color: $cBlack;
+  color: white;
+  height: 100%;
+  width: 100%;
+  font-weight: 600;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
 }

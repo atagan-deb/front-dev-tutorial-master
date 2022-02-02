@@ -12,10 +12,26 @@
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  position: relative;
+  z-index: 1;
 }
 
 .btn:hover {
   background-color: black;
   color: white;
+}
+
+span {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  height: 100%;
+  width: 100%;
+  font-weight: 600;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
 }
 /*# sourceMappingURL=style.css.map */

@@ -10,14 +10,19 @@ $cBlack: black;
     background-color: $cBlack;
     border-radius: 50%;
     animation: sk-bouncedelay 1.4s infinite;
-  }
-
-  & .bounce1 {
-    animation-delay: -0.32s;
-  }
-
-  & .bounce2 {
-    animation-delay: -0.16s;
+    // @for $i from 1 to 3 {
+    @for $i from 1 through 2 {
+      &:nth-child(#{$i}) {
+        animation-delay: -0.32s / $i; // 単位を含めたまま計算可能！！！
+        // background-image: url('/images/image#{$i}/test.png');
+      }
+    }
+    // &:nth-child(1) {
+    //   animation-delay: -0.32s;
+    // }
+    // &:nth-child(2) {
+    //   animation-delay: -0.16s;
+    // }
   }
 }
 

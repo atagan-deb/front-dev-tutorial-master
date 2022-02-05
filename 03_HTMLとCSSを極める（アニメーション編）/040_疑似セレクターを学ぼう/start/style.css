@@ -1,1 +1,72 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+a {
+  color: orange;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:hover {
+  color: red;
+}
+
+a:focus {
+  color: green;
+}
+
+a:active {
+  color: purple;
+}
+
+div.nthChild span {
+  color: olive;
+}
+
+div.nthChild span:nth-child(odd) {
+  color: red;
+}
+
+div.nthChild span:nth-child(2n + 3) {
+  color: blue;
+}
+
+div.nthOfType span {
+  color: olive;
+}
+
+div.nthOfType span:nth-of-type(odd) {
+  color: red;
+}
+
+div.nthOfType span:nth-of-type(2n + 3) {
+  color: blue;
+}
+
+div.firstChild span {
+  color: olive;
+}
+
+div.firstChild span:first-child {
+  color: purple;
+}
+
+div.firstChild span:last-child {
+  color: purple;
+}
+
+div.not span {
+  color: olive;
+}
+
+div.not span:first-of-type {
+  color: purple;
+}
+
+div.not span:last-of-type {
+  color: purple;
+}
+
+div.not span:not(.cls) {
+  color: green;
+}
+/*# sourceMappingURL=style.css.map */

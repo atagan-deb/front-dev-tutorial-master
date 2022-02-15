@@ -1,3 +1,12 @@
+body {
+  margin: 0;
+}
+
+section {
+  position: relative;
+  height: 150vh;
+}
+
 img {
   max-width: 100%;
   vertical-align: bottom;
@@ -202,7 +211,7 @@ img {
 
 .img-bg50::before {
   display: block;
-  content: '';
+  content: "";
   padding-top: 50%;
 }
 /*# sourceMappingURL=style.css.map */

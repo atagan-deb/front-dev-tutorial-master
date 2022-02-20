@@ -1,0 +1,48 @@
+// css形式の読み込み
+// @import url("mobile.css") screen and (max-width: 600px);
+// @import url("desktop.css") screen and (min-width: 601px);
+// @media screen and (max-width: 600px) {
+//   @import "modile.scss";
+// }
+
+// mobile.scssにdesktop.scssの内容を上書きマージする
+// モバイルファースト設計（逆はデスクトップファースト設計）
+// モバイルの方がシンプルなcssになることが多いため、モバイルファーストを選択したほうが良い
+// @import "mobile.scss";
+
+// mediaクエリ
+// screen: 画面表示時
+// print: 印刷時
+// all: 両方
+// and: and条件, ,: or条件
+// @media screen and (min-width: 601px) {
+//   @import "desktop.scss";
+// }
+// --------------------------------------------------------------------------------------
+
+@import "modules/variables";
+@import "modules/mixin";
+@import "modules/hero-slider";
+
+@import "breakpoints/base";
+
+@media screen and (mim-width: 480px) {
+  @import "breakpoints/480up";
+}
+@media screen and (mim-width: 600px) {
+  @import "breakpoints/600up";
+}
+@media screen and (mim-width: 960px) {
+  @import "breakpoints/960up";
+}
+@media screen and (mim-width: 1280px) {
+  @import "breakpoints/1280up";
+}
+
+@media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2) {
+  @import "breakpoints/2x";
+}
+
+@media print {
+  @import "breakpoints/print";
+}

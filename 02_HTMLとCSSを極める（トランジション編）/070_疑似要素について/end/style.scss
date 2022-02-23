@@ -19,7 +19,7 @@ $cBlack: black;
         position: relative;
         overflow: hidden;
         z-index: 1;
-        
+
         &::before {
             content: '';
            display: inline-block;
@@ -43,4 +43,3 @@ $cBlack: black;
         }
     }
 }
-

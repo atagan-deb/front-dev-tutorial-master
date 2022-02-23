@@ -23,19 +23,22 @@
 @import "modules/variables";
 @import "modules/mixin";
 @import "modules/hero-slider";
+@import "modules/text-animation";
+@import "modules/image-slide";
+@import "modules/button";
 
 @import "breakpoints/base";
 
-@media screen and (mim-width: 480px) {
+@media screen and (min-width: 480px) {
   @import "breakpoints/480up";
 }
-@media screen and (mim-width: 600px) {
+@media screen and (min-width: 600px) {
   @import "breakpoints/600up";
 }
-@media screen and (mim-width: 960px) {
+@media screen and (min-width: 960px) {
   @import "breakpoints/960up";
 }
-@media screen and (mim-width: 1280px) {
+@media screen and (min-width: 1280px) {
   @import "breakpoints/1280up";
 }
 

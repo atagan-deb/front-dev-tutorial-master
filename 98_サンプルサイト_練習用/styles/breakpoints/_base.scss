@@ -7,7 +7,10 @@ Stylesheet: ベーススタイル
 body {
   font-family: "Kameron", "Noto Sans JP", sans-serif;
 }
-
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
 .font-sm {
   font-size: 14px;
 }
@@ -17,7 +20,7 @@ body {
 .font-lr {
   font-size: 17px;
 }
-.font-sm {
+.font-lg {
   font-size: 25px;
 }
 .mb-sm {
@@ -37,4 +40,90 @@ body {
   width: 90%;
   margin: 0 auto;
   max-width: $contentMaxWidth;
+}
+
+.main-title {
+  @extend .font-lg;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.sub-title {
+  @extend .font-sm;
+  color: $cSubTitle;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.houses {
+  @extend .content-width;
+  @extend .mb-lg;
+
+  &__inner {
+    @extend .flex;
+  }
+
+  &__title {
+    @extend .font-lr;
+    @extend .mb-sm;
+  }
+
+  &__btn {
+    text-align: center;
+    flex-basis: 100%;
+  }
+}
+
+.popular {
+
+  &__inner {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 90%;
+      background-color: $cBgGray;
+    }
+  }
+
+  &__header {
+    @extend .content-width;
+  }
+  &__container {
+    position: relative;
+    z-index: 2;
+    @extend .flex;
+    @extend .content-width;
+    @extend .pb-sm;
+  }
+
+  &__title {
+    @extend .font-md;
+    @extend .mb-sm;
+  }
+
+  &__btn {
+    text-align: center;
+    flex-basis: 100%;
+  }
+
+  &__img {
+    height: 150px;
+    overflow: hidden;
+    margin-bottom: 5px;
+
+    & > img {
+      object-fit: cover;
+      object-position: center;
+      height: 100%;
+      width: 100%;
+    }
+  }
 }

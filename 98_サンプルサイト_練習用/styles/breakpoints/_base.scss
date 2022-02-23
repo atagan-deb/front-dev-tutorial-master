@@ -78,19 +78,20 @@ img {
 }
 
 .popular {
-
   &__inner {
     position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 90%;
-      background-color: $cBgGray;
+    @include p-base($top: 10%, $height: 90%) {
+      background: $cBgGray;
     }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 90%;
+    //   background-color: $cBgGray;
+    // }
   }
 
   &__header {
@@ -126,4 +127,12 @@ img {
       width: 100%;
     }
   }
+}
+
+.travel {
+  @extend .content-width;
+  &__inner {
+    @extend .flex;
+  }
+
 }

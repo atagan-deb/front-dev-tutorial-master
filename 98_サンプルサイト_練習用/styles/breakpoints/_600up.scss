@@ -24,3 +24,13 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     flex-basis: 47%;
   }
 }
+
+.travel {
+  &__inner {
+    justify-content: space-between;
+  }
+  &__texts,
+  &__img {
+    flex-basis: 47%;
+  }
+}

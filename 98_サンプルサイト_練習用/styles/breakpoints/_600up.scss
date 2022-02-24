@@ -27,10 +27,15 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 
 .travel {
   &__inner {
-    justify-content: space-between;
+    padding: 50px;
   }
   &__texts,
   &__img {
     flex-basis: 47%;
+  }
+
+  &__texts {
+    display: flex;
+    align-items: flex-end;
   }
 }

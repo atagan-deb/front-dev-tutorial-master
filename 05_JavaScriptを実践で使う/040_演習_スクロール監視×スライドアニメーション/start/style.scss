@@ -1,5 +1,13 @@
 @import "mixin";
 
+body {
+  margin: 0;
+}
+section {
+  position: relative;
+  height: 150vh;
+}
+
 img {
   max-width: 100%;
   vertical-align: bottom;
@@ -136,10 +144,10 @@ img {
 
 .img-bg50 {
   position: relative;
-  
+
   &::before {
     display: block;
-    content: '';
+    content: "";
     padding-top: 50%;
   }
 }

@@ -9,6 +9,18 @@ body {
   background-color: black;
   -webkit-animation: sk-bouncedelay 1.4s;
           animation: sk-bouncedelay 1.4s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  animation-direction: alternate-reverse;
+}
+
+.paused {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 @-webkit-keyframes sk-bouncedelay {

@@ -10,6 +10,16 @@ body {
   height: 100px;
   background-color: $cBlack;
   animation: sk-bouncedelay 1.4s;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+  animation-iteration-count: 3;
+  animation-direction: alternate-reverse;
+  // animation-fill-mode: backwards;
+  // transform: scale(0);
+}
+
+.paused {
+  animation-play-state: paused;
 }
 
 @keyframes sk-bouncedelay {

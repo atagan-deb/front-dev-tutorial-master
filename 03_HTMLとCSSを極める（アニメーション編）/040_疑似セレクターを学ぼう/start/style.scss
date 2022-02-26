@@ -1,0 +1,77 @@
+a {
+  color: orange;
+
+  &:visited {
+    color: blue;
+  }
+
+  &:hover {
+    color: red;
+  }
+
+  &:focus {
+    color: green;
+  }
+
+  &:active {
+    color: purple;
+  }
+}
+
+// nth-childは要素を考慮せず順番にカラーを当てる
+div.nthChild {
+  & span {
+    color: olive;
+    &:nth-child(odd) {
+      color: red;
+    }
+    &:nth-child(2n + 3) {
+      color: blue;
+    }
+    // &:nth-child(even) {
+    //   color: blue;
+    // }
+  }
+}
+
+// nth-of-typeは要素（span）を考慮してカラーを当てる
+div.nthOfType {
+  & span {
+    color: olive;
+    &:nth-of-type(odd) {
+      color: red;
+    }
+    &:nth-of-type(2n + 3) {
+      color: blue;
+    }
+    // &:nth-of-type(even) {
+    //   color: blue;
+    // }
+  }
+}
+
+div.firstChild {
+  & span {
+    color: olive;
+    &:first-child {
+      color: purple;
+    }
+    &:last-child {
+      color: purple;
+    }
+  }
+}
+div.not {
+  & span {
+    color: olive;
+    &:first-of-type {
+      color: purple;
+    }
+    &:last-of-type {
+      color: purple;
+    }
+    &:not(.cls){
+      color: green
+    }
+  }
+}

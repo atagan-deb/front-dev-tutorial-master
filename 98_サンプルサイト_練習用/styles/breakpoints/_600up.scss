@@ -39,3 +39,12 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     align-items: flex-end;
   }
 }
+
+.footer {
+  & .logo {
+    justify-content: flex-start;
+  }
+  &__li {
+    margin: 10px 30px 10px 0;
+  }
+}

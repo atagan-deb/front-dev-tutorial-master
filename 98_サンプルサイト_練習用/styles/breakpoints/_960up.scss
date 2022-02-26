@@ -24,6 +24,12 @@ Stylesheet: 960px以上のモニタで適用
   margin-bottom: 150px !important;
 }
 
+.header {
+  &__nav {
+    display: block;
+  }
+}
+
 .popular {
   &__item {
     flex-basis: 25%;
@@ -46,4 +52,14 @@ Stylesheet: 960px以上のモニタで適用
       display: block;
     }
   }
+}
+
+.mobile-menu {
+  &__btn {
+    display: none;
+  }
+}
+
+.swiper-slide {
+  box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
 }

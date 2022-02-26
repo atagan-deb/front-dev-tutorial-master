@@ -15,13 +15,20 @@ $cBlack: black;
   cursor: pointer;
   transition: all 0.3s;
 
-  &.slide-bg {
+  &.cover-3d {
     position: relative;
-    overflow: hidden;
     z-index: 1;
+    transform-style: preserve-3d;
+    perspective: 300px; // 遠近感
+    // perspective-origin: -100% 50%; // 視点の位置
 
+    & span {
+      display: inline-block;
+      // transform: translateZ(20px);
+      transform: translate3d(0, 0, 20px);
+    }
     &::before {
-      content: '';
+      content: "";
       display: inline-block;
       width: 100%;
       height: 100%;
@@ -29,9 +36,11 @@ $cBlack: black;
       position: absolute;
       top: 0;
       left: 0;
-      transform: translateX(-100%);
-      transition: transform 0.3s;
-      z-index: -1;
+      transform: rotateX(90deg);
+      transition: all 1s;
+      transform-origin: top center;
+      // z-index: -1;
+      opacity: 0;
     }
 
     &:hover {
@@ -39,6 +48,7 @@ $cBlack: black;
 
       &::before {
         transform: none;
+        opacity: 1;
       }
     }
   }

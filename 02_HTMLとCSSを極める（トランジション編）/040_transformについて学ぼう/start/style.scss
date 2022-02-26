@@ -1,6 +1,13 @@
 .rect {
   width: 100px;
   height: 100px;
-  margin: 0 auto;
+  margin: 200px auto;
   background-color: orangered;
+  // transform: translate(50px, 100%);
+  // transform: rotate(30deg);
+  // transform-origin: -20px -100px;
+  // transform: skew(-50deg);
+  // transform-origin: bottom right;
+  // transform: scale(2, 0.5);
+  transform: rotate(-30deg) scale(2, 0.5);
 }

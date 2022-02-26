@@ -4,7 +4,6 @@ $cBlack: black;
 #container {
   text-align: center;
 }
-
 .btn {
   background-color: $cWhite;
   color: $cBlack;
@@ -14,10 +13,21 @@ $cBlack: black;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s;
+  &:hover {
+    background-color: $cBlack;
+    color: $cWhite;
+  }
+}
 
-  &.float {
-    &:hover {
-      box-shadow: 7px 9px 10px 0 rgba(0, 0, 0, 0.5);
+#container .btn {
+}
+#container {
+  .btn {
+  }
+  &-cube {
+    background-color: aqua;
+    & .inner {
+      background-color: purple;
     }
   }
 }
